@@ -1,0 +1,41 @@
+/* src/assets/css/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .notifications {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notifications button {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 4px; /* Bords arrondis du bouton */
+    padding: 0.5rem 1rem; /* Espacement intérieur du bouton */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .notifications button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+  }
+  
+  .notifications button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.5); /* Ombre au focus */
+  }
+  

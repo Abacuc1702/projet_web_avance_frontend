@@ -1,0 +1,279 @@
+/* src/assets/css/Orders.css */
+.orders-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.orders-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.toggle-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.toggle-form-button:hover {
+  background-color: #0056b3;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.order-form h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.order-form input, 
+.order-form select, 
+.order-form button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-item input {
+  flex: 1;
+}
+
+.product-item span {
+  flex: 1;
+}
+
+.add-product-button,
+.remove-product-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-product-button:hover,
+.remove-product-button:hover {
+  background-color: #0056b3;
+}
+
+/* Orders Filters and Search Section */
+.orders-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.orders-filters input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.orders-filters select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: #f5f5f5;
+  flex: 1;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+
+/* Orders List */
+.orders-list {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.orders-list h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.orders-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.order-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-item:hover {
+  background-color: #f5f5f5;
+}
+
+.order-item span {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.order-item span strong {
+  color: #007bff;
+}
+
+/* Orders Table */
+.orders-table-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-table th, .orders-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.orders-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.order-row {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-row:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style pour le champ de date */
+.order-form input[type="date"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.order-form input[type="date"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.orders-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.orders-filter input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.orders-filter select {
+  padding: 5px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-table th, .orders-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.orders-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.order-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.product-selection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-selection .react-select__control {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.product-selection input[type="number"] {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.product-selection .product-price,
+.product-selection .product-total-cost {
+  margin-right: 10px;
+}
+
+.add-product-button, .remove-product-button, .submit-order-button, .toggle-form-button {
+  margin-top: 10px;
+}
